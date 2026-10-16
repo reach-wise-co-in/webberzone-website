@@ -1,11 +1,11 @@
 "use client";
-import { useParams } from "@/lib/router";
 import Topbar from '../../../utilities/topbar/Topbar';
 import './SingleService.css';
 import { Helmet } from "@/lib/Helmet";
-import { SITE } from "@/lib/site";
+import { SITE, serviceHref } from "@/lib/site";
 
-function SingleService() {
+// `id` comes from the page, which maps the URL slug to it.
+function SingleService({ id }) {
     const serviceItems = [
         {
             serviceid: 1,
@@ -230,8 +230,7 @@ function SingleService() {
         }
     ];
 
-    const { id } = useParams();
-    const serviceid = parseInt(id, 10);
+    const serviceid = Number(id);
     const service = serviceItems.find(item => item.serviceid === serviceid);
 
     if (!service) {
@@ -241,7 +240,7 @@ function SingleService() {
     return (
         <>
        <Helmet>
-        <link rel="canonical" href={`${SITE.url}/services/${id}`} />
+        <link rel="canonical" href={`${SITE.url}${serviceHref(id)}`} />
       </Helmet>
             <Topbar />
 

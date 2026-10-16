@@ -1,11 +1,15 @@
 "use client";
 import Topbar from "../../utilities/topbar/Topbar";
+import { Helmet } from "@/lib/Helmet";
 import { SITE } from "@/lib/site";
 import { Link } from "@/lib/router";
 
 function Terms() {
   return (
     <>
+      <Helmet>
+        <link rel="canonical" href={`${SITE.url}/terms`} />
+      </Helmet>
            <Topbar />
 
 <div className="hero-bg mb-4">
@@ -19,7 +23,7 @@ function Terms() {
           </ul>
         </div>
       </div>
-      <h2 className="Sectional-heading mt-4 pt-3 ms-2 syne"> Terms And Conditions</h2>
+      <h1 className="Sectional-heading mt-4 pt-3 ms-2 syne">Terms And Conditions</h1>
     </div>
   </div>
   <div className="bg-web-hero-img"></div>

@@ -84,3 +84,16 @@ export const SERVICES = [
   "SEO",
   "Website & App Development",
 ];
+
+// Service detail pages: `id` matches the content in SingleService.jsx, `slug` is the URL.
+export const SERVICE_PAGES = [
+  { id: 1, slug: "social-media-management", name: "Social Media Management" },
+  { id: 2, slug: "meta-google-ads", name: "Meta & Google Ads" },
+  { id: 3, slug: "geo-fencing-ads", name: "Geo-Fencing Ads" },
+  { id: 4, slug: "content-creation-ai-videos", name: "Content & AI Videos" },
+  { id: 5, slug: "seo", name: "SEO" },
+  { id: 6, slug: "website-app-development", name: "Website & App Development" },
+];
+
+export const serviceHref = (id) =>
+  `/services/${SERVICE_PAGES.find((s) => s.id === Number(id))?.slug ?? ""}`;

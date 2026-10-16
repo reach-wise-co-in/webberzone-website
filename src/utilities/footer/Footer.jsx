@@ -19,13 +19,13 @@ function Footer() {
             WebberZone helps US businesses grow with social media management, Meta &amp; Google ads, geo-fencing campaigns, AI videos, SEO and high-converting websites.
             </p>
           </div>
-          <div className="col-lg-4 text-white   mt-2 mt-lg-5 ps-3 pe-3 pt-3">
-            <ul className="list-unstyled d-flex flex-column gap-2 m-0">
+          <div className="col-lg-4 text-white mt-2 ps-3 pe-3 pt-3 footer-col-center">
+            <ul className="list-unstyled d-flex flex-column align-items-lg-center text-lg-center gap-2 m-0">
               <li><a href={`tel:${SITE.phoneE164}`} className="footer-link">{SITE.phoneDisplay}</a></li>
               <li><a href={`mailto:${SITE.email}`} className="footer-link">{SITE.email}</a></li>
             </ul>
           </div>
-          <div className="col-lg-4 text-white mt-2 pt-3 p-4">
+          <div className="col-lg-4 text-white mt-2 pt-3 px-4 pb-4 footer-col-right">
   <div className="d-flex flex-column rounded-pill">
     <p className='ms-2 me-2'>
     Ready to get more leads? Chat with us on WhatsApp.
@@ -50,7 +50,7 @@ function Footer() {
   </div>
   <div className="quick-links">
     <ul className="d-flex flex-wrap list-unstyled p-0 m-0 gap-4 mt-2">
-      <li><Link to="/terms&conditions" className="footer-link">Terms & Conditions</Link></li>
+      <li><Link to="/terms" className="footer-link">Terms & Conditions</Link></li>
       <li><Link to="/privacypolicy" className="footer-link">Privacy Policy</Link></li>
       <li><Link to="/sitemap" className="footer-link">Sitemap</Link></li>
     </ul>

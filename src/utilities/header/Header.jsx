@@ -83,12 +83,12 @@ function Header() {
                                 </button>
                             </Link>
                             <ul className={`dropdown-menu ${isOpen.services ? 'show' : ''}`} aria-labelledby="dropdownMenuButton">
-                            <li><Link className="dropdown-item" to="/services/1" onClick={handleLinkClick}>Social Media Management</Link></li>
-                            <li><Link className="dropdown-item" to="/services/2" onClick={handleLinkClick}>Meta & Google Ads</Link></li>
-                            <li><Link className="dropdown-item" to="/services/3" onClick={handleLinkClick}>Geo-Fencing Ads</Link></li>
-                            <li><Link className="dropdown-item" to="/services/4" onClick={handleLinkClick}>Content & AI Videos</Link></li>
-                            <li><Link className="dropdown-item" to="/services/5" onClick={handleLinkClick}>SEO</Link></li>
-                            <li><Link className="dropdown-item" to="/services/6" onClick={handleLinkClick}>Website & App Development</Link></li>
+                            <li><Link className="dropdown-item" to="/services/social-media-management" onClick={handleLinkClick}>Social Media Management</Link></li>
+                            <li><Link className="dropdown-item" to="/services/meta-google-ads" onClick={handleLinkClick}>Meta & Google Ads</Link></li>
+                            <li><Link className="dropdown-item" to="/services/geo-fencing-ads" onClick={handleLinkClick}>Geo-Fencing Ads</Link></li>
+                            <li><Link className="dropdown-item" to="/services/content-creation-ai-videos" onClick={handleLinkClick}>Content & AI Videos</Link></li>
+                            <li><Link className="dropdown-item" to="/services/seo" onClick={handleLinkClick}>SEO</Link></li>
+                            <li><Link className="dropdown-item" to="/services/website-app-development" onClick={handleLinkClick}>Website & App Development</Link></li>
                             </ul>
                         </div>
 

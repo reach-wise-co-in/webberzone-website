@@ -1,5 +1,6 @@
 "use client";
 import { Link } from "@/lib/router"
+import { serviceHref } from "@/lib/site"
 import './ServiceItems.css'
 function ServiceItems() {
     const serviceItems=[
@@ -40,7 +41,7 @@ function ServiceItems() {
             <div className="row  ">
             {serviceItems.map(item => (
                 <div className="col-lg-4  mt-3 p-3" key={item.serviceid}>
-                    <Link to={`/services/${item.serviceid}`} className='text-decoration-none text-black'>
+                    <Link to={serviceHref(item.serviceid)} className='text-decoration-none text-black'>
     <div className="service-container  ">
         <div className="id-container">
             <div className="help-icon ms-2 sora">

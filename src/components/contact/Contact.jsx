@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import Topbar from "../../utilities/topbar/Topbar";
 import './Contact.css';
@@ -8,17 +8,15 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { toast } from 'react-toastify';
 import { Helmet } from "@/lib/Helmet";
 import { SITE, ALL_PLANS, SERVICES, whatsappLink } from "@/lib/site";
-import { sendLead } from "@/lib/sendLead";
+import { openWhatsAppLead } from "@/lib/whatsappLead";
 
 const NOT_SURE = "Not sure yet - need advice";
 
 function Contact() {
 
-  const { register, handleSubmit, reset, setValue, formState: { errors, isSubmitting } } = useForm();
-  const [sent, setSent] = useState(false);
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm();
 
   // Pricing cards link here with ?plan=<id>; preselect that plan.
   useEffect(() => {
@@ -27,23 +25,17 @@ function Contact() {
     if (plan) setValue('interest', `${plan.name} (${plan.price})`);
   }, [setValue]);
 
-  const onSubmit = async (data) => {
-    try {
-      await sendLead('Contact Us', {
-        'Name': `${data.firstName} ${data.lastName}`,
-        'Email': data.email,
-        'Phone': data.phone,
-        'Business': data.company,
-        'Website': data.website,
-        'Interested In': data.interest,
-        'Project Details': data.projectDescription,
-      }, { honeypot: data.hp });
-      toast.success("Thanks! We'll get back to you shortly.");
-      setSent(true);
-      reset();
-    } catch (error) {
-      toast.error(`${error.message} You can also reach us on WhatsApp at ${SITE.phoneDisplay}.`);
-    }
+  // Opens WhatsApp with every field prefilled; the visitor taps Send there.
+  const onSubmit = (data) => {
+    openWhatsAppLead('Contact Us', {
+      'Name': `${data.firstName} ${data.lastName}`,
+      'Email': data.email,
+      'Phone': data.phone,
+      'Business': data.company,
+      'Website': data.website,
+      'Interested In': data.interest,
+      'Project Details': data.projectDescription,
+    });
   };
 
   return (
@@ -75,8 +67,6 @@ function Contact() {
         <div className="row justify-content-between">
           <div className="col-lg-8 col-md-4">
             <form onSubmit={handleSubmit(onSubmit)}>
-              {/* Honeypot field, hidden from people; bots that fill it are ignored */}
-              <input type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: 'absolute', left: '-9999px' }} {...register('hp')} />
               <div>
                 <h2 className='syne font-22'>
                   <span className="text-orange syne me-2">01.</span> Tell Us About Yourself
@@ -217,12 +207,9 @@ function Contact() {
                 </div>
               </div>
 
-              <button type="submit" disabled={isSubmitting} className="btn-webberzone w-100 text-black bg-white mt-5">
-                {isSubmitting ? 'Sending...' : 'Send Query'}
+              <button type="submit" className="btn-webberzone w-100 text-black bg-white mt-5">
+                <FaWhatsapp className="me-2" /> Send on WhatsApp
               </button>
-              {sent && (
-                <p className="text-success mt-3">Thanks! Your request was received. We usually reply within a few hours.</p>
-              )}
             </form>
           </div>
 

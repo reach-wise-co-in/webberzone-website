@@ -1,11 +1,15 @@
 "use client";
 import  './PrivacyPolicy.css'
 import Topbar from "../../utilities/topbar/Topbar";
+import { Helmet } from "@/lib/Helmet";
 import { SITE } from "@/lib/site";
 
 function PrivacyPolicy() {
   return (
     <>
+      <Helmet>
+        <link rel="canonical" href={`${SITE.url}/privacypolicy`} />
+      </Helmet>
         <Topbar />
 
 <div className="hero-bg mb-4">
@@ -19,7 +23,7 @@ function PrivacyPolicy() {
           </ul>
         </div>
       </div>
-      <h2 className="Sectional-heading mt-4 pt-3 ms-2 syne"> Our Privacy Policy</h2>
+      <h1 className="Sectional-heading mt-4 pt-3 ms-2 syne">Our Privacy Policy</h1>
     </div>
   </div>
   <div className="bg-web-hero-img"></div>
@@ -75,7 +79,7 @@ function PrivacyPolicy() {
           <div>
             <ul>
                 <li>
-                <strong>Contact Form Messages:</strong> When you submit our contact form, the details you provide (name, email, phone, business, website, and message) are sent to {SITE.name} via WhatsApp using a third-party messaging service (CallMeBot and WhatsApp) so that we can receive and respond to your inquiry. These services process the information under their own privacy policies.
+                <strong>Contact Form Messages:</strong> When you submit our contact form, the details you provide (name, email, phone, business, website, and message) are placed into a WhatsApp message to {SITE.name}, which opens in your WhatsApp app or WhatsApp Web for you to review and send. Nothing is sent until you choose to send it. WhatsApp processes the message under its own privacy policy.
                 </li>
                 <li>
                 <strong>Service Providers:</strong> We may share your information with third-party service providers who assist us in operating our website, conducting our business, or serving you.

@@ -76,3 +76,13 @@
   .bg-bottom-footer{
     background-color: #1f252e;
   }
+/* Desktop footer column spacing (columns stack on smaller screens) */
+@media (min-width: 992px) {
+  .bg-footer .footer-col-center {
+    padding-top: 64px !important;
+  }
+
+  .bg-footer .footer-col-right {
+    padding-top: 62px !important;
+  }
+}

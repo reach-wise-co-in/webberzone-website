@@ -60,7 +60,7 @@ function Tab3() {
                   <h5 className='syne'>Do you build websites and apps?</h5>
                 </Accordion.Header>
                 <Accordion.Body className='sora text-muted'>
-                  Yes. We build modern, responsive websites and develop apps. See our <Link to="/services/6" className="text-orange">Website & App Development</Link> page to learn more.
+                  Yes. We build modern, responsive websites and develop apps. See our <Link to="/services/website-app-development" className="text-orange">Website & App Development</Link> page to learn more.
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>

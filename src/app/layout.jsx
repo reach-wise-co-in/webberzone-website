@@ -1,22 +1,16 @@
 import "./all-styles";
 import SiteShell from "./SiteShell";
 import { SITE } from "@/lib/site";
+import { DEFAULT_TITLE, DEFAULT_DESCRIPTION, pageMetadata } from "@/lib/seo";
 
-const description =
-  "WebberZone is a digital marketing and web agency helping US businesses get more leads with social media management, Meta & Google ads, geo-fencing ads, AI videos, SEO, websites and apps. Plans from $299.";
+const description = DEFAULT_DESCRIPTION;
 
+// Defaults; each page sets its own title and description from src/lib/seo.js.
 export const metadata = {
+  ...pageMetadata("/"),
   metadataBase: new URL(SITE.url),
-  title: "WebberZone | Social Media Marketing, Meta & Google Ads, SEO & Web Development",
-  description,
+  title: { default: DEFAULT_TITLE, template: `%s | ${SITE.name}` },
   icons: { icon: "/webberzone-mark.png", apple: "/webberzone-mark.png" },
-  openGraph: {
-    type: "website",
-    siteName: SITE.name,
-    url: SITE.url,
-    title: "WebberZone | Grow Your Business With Ads, Social Media & SEO",
-    description,
-  },
 };
 
 const organizationSchema = {

@@ -1,5 +1,7 @@
 "use client";
 import Topbar from "../../utilities/topbar/Topbar";
+import { Helmet } from "@/lib/Helmet";
+import { SITE } from "@/lib/site";
 import { Link } from "@/lib/router";
 
 const PAGES = [
@@ -9,19 +11,19 @@ const PAGES = [
     to: "/services",
     label: "Services",
     children: [
-      { to: "/services/1", label: "Social Media Management" },
-      { to: "/services/2", label: "Meta & Google Ads" },
-      { to: "/services/3", label: "Geo-Fencing Ads" },
-      { to: "/services/4", label: "Content & AI Videos" },
-      { to: "/services/5", label: "SEO" },
-      { to: "/services/6", label: "Website & App Development" },
+      { to: "/services/social-media-management", label: "Social Media Management" },
+      { to: "/services/meta-google-ads", label: "Meta & Google Ads" },
+      { to: "/services/geo-fencing-ads", label: "Geo-Fencing Ads" },
+      { to: "/services/content-creation-ai-videos", label: "Content & AI Videos" },
+      { to: "/services/seo", label: "SEO" },
+      { to: "/services/website-app-development", label: "Website & App Development" },
     ],
   },
   { to: "/pricing", label: "Pricing" },
   { to: "/contact", label: "Contact Us" },
   { to: "/faq", label: "FAQs" },
   { to: "/privacypolicy", label: "Privacy Policy" },
-  { to: "/terms&conditions", label: "Terms & Conditions" },
+  { to: "/terms", label: "Terms & Conditions" },
   { to: "/sitemap", label: "Sitemap" },
 ];
 
@@ -29,6 +31,9 @@ function Sitemap() {
   return (
     <>
 
+      <Helmet>
+        <link rel="canonical" href={`${SITE.url}/sitemap`} />
+      </Helmet>
     <Topbar />
 
 <div className="hero-bg mb-4">
@@ -42,7 +47,7 @@ function Sitemap() {
           </ul>
         </div>
       </div>
-      <h2 className="Sectional-heading mt-4 pt-3 ms-2 syne"> Sitemap </h2>
+      <h1 className="Sectional-heading mt-4 pt-3 ms-2 syne">Sitemap</h1>
     </div>
   </div>
   <div className="bg-web-hero-img"></div>

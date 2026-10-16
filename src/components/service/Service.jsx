@@ -47,8 +47,7 @@ function Service() {
               At {SITE.name}, we help US small and medium businesses get found, get noticed, and <span className="text-orange">get more leads</span> with social media, paid ads, SEO, and websites built to convert.
             </h4>
           </div>
-          <div className="col-lg-2 col-md-2"></div>
-          <div className="col-lg-3 mt-2 col-md-4 text-center">
+          <div className="col-lg-5 mt-2 col-md-12 text-center text-md-start text-lg-end">
             <Link to="/contact" className="btn btn-webberzone text-black sora">Get a Free Consultation</Link>
           </div>
         </div>
