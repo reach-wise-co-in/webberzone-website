@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="372" height="100" viewBox="0 0 372 100" role="img" aria-label="WebberZone">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7b23b"/>
+      <stop offset=".55" stop-color="#f57c00"/>
+      <stop offset="1" stop-color="#e2456b"/>
+    </linearGradient>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f57c00"/>
+      <stop offset="1" stop-color="#e2456b"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="8" width="84" height="84" rx="20" fill="url(#g)"/>
+  <path d="M20 32 L32 70 L46 44 L60 70 L72 32" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="104" y="58" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-1" fill="url(#t)">WebberZone</text>
+  <rect x="106" y="70" width="140" height="4" rx="2" fill="url(#t)"/>
+  <text x="252" y="76" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" fill="#f57c00">GROW · REACH</text>
+</svg>

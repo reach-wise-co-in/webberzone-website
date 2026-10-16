@@ -1,0 +1,250 @@
+/* Testimonial slider, matched to the "What Our Clients Say" section of the IT template. */
+.wz-reviews {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0;
+    background-color: rgba(18, 24, 32, 0.04);
+    font-family: Sora, sans-serif;
+    font-size: 15px;
+    line-height: 170%;
+    color: rgba(18, 24, 32, 0.4);
+}
+
+.wz-deco {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    width: 220px;
+    height: 140px;
+    background: url(/testimonials/deco-circles.svg) no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.wz-reviews-head {
+    margin-bottom: 90px;
+}
+
+.wz-suptitle {
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    font-family: Syne, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #121820;
+}
+
+.wz-suptitle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #f57c00;
+}
+
+.wz-reviews .wz-reviews-title {
+    margin: 0;
+    font-family: Syne, sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #121820;
+}
+
+.wz-adaptive-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+.wz-slider-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wz-slider-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: #121820;
+    font-weight: 500;
+    transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.wz-revi-prev {
+    margin-right: 30px;
+}
+
+.wz-slider-btn svg {
+    font-size: 15px;
+    transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.wz-revi-prev svg {
+    margin-right: 15px;
+}
+
+.wz-revi-next svg {
+    margin-left: 15px;
+}
+
+.wz-slider-btn span {
+    font-family: Syne, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.wz-slider-btn:hover,
+.wz-slider-btn:hover * {
+    color: #f57c00;
+}
+
+.wz-slider-btn.swiper-button-disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+/* Cards beyond the container stay visible, as in the template */
+.wz-revi-slider.swiper {
+    overflow: visible;
+}
+
+.wz-revi-slider .swiper-slide {
+    height: auto;
+}
+
+.wz-review {
+    height: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.wz-stars {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.wz-stars img {
+    margin-right: 20px;
+}
+
+.wz-stars ul {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wz-stars li {
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 1;
+    color: #f57c00;
+}
+
+.wz-stars li.wz-empty {
+    color: rgba(18, 24, 32, 0.2);
+}
+
+.wz-review p {
+    margin: 0 0 30px;
+    color: rgba(18, 24, 32, 0.4);
+}
+
+.wz-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.wz-author img,
+.wz-avatar {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.wz-author img {
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.4s;
+}
+
+.wz-review:hover .wz-author img {
+    filter: grayscale(0);
+}
+
+.wz-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121820;
+    color: #fff;
+    font-family: Syne, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.4s;
+}
+
+.wz-review:hover .wz-avatar {
+    background-color: #f57c00;
+}
+
+.wz-name {
+    padding-left: 20px;
+}
+
+.wz-name h6 {
+    margin: 0 0 5px;
+    font-family: Syne, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #121820;
+}
+
+.wz-text-sm {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 992px) {
+    .wz-reviews {
+        padding: 60px 0;
+    }
+
+    .wz-reviews-head {
+        margin-bottom: 60px;
+    }
+
+    .wz-reviews .wz-reviews-title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wz-reviews .wz-reviews-title {
+        font-size: 29px;
+    }
+
+    .wz-adaptive-right {
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+}

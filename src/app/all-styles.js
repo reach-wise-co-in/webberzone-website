@@ -1,0 +1,29 @@
+// The Vite app imported every page eagerly, so all component CSS was always loaded.
+// Pages rely on that, so every stylesheet is loaded globally here in the original order.
+import "@/utilities/footer/Footer.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@/components/scrolltotop/ScrollToTop.css";
+import "@/utilities/header/Header.css";
+import "@/components/home/collaborate/Collaborate.css";
+import "@/components/home/help/Help.css";
+import "@/components/home/herosection/Hero.css";
+import "@/components/home/Home.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "@/components/home/skills/Skills.css";
+import "@/utilities/topbar/Topbar.css";
+import "@/components/about/About.css";
+import "@/components/about/overviewAbout/Overview.css";
+import "@/components/about/experience/Experience.css";
+import "@/components/about/mission/Mission.css";
+import "@/components/contact/Contact.css";
+import "@/components/pricing/Pricing.css";
+import "@/components/faq/Faq.css";
+import "@/components/faq/tabcontent/Tab1.css";
+import "aos/dist/aos.css";
+import "@/components/service/Service.css";
+import "@/components/service/serviteitems/ServiceItems.css";
+import "@/components/service/saasappliction/SaasApplication.css";
+import "@/components/service/singleservice/SingleService.css";
+import "@/components/privacypolicy/PrivacyPolicy.css";
+import "react-toastify/dist/ReactToastify.css";
