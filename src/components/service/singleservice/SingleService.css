@@ -56,7 +56,7 @@
     content: "";
     width: 300px;
     height: 300px;
-    background-color: #f57c00;
+    background-color: var(--wz-primary);
     border-radius: 50%;
     position: absolute;
     z-index: 2;
@@ -84,7 +84,7 @@
     content: "";
     width: 300px;
     height: 300px;
-    background-color: #f57c00;
+    background-color: var(--wz-primary);
     border-radius: 50%;
     position: absolute;
     z-index: 2;

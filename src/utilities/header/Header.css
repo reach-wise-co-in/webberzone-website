@@ -99,7 +99,7 @@ body {
 }
     .nav-item-wrapper::after {
         content: '➔'; /* Unicode arrow */
-        color: #f57c00;
+        color: var(--wz-primary);
         margin-right: 8px;
         display: inline-block;
         cursor: pointer;
@@ -140,18 +140,18 @@ body {
     width: 8px;
     height: 8px;
     background-color: transparent;
-    border: 2px solid #f57c00;
+    border: 2px solid var(--wz-primary);
     border-radius: 50%;
 }
 
 .nav-text:hover,
 .dropdown-item:hover {
-    color: #f57c00;
+    color: var(--wz-primary);
     background-color: #12182000 !important;
 }
 
 .drop-btn:hover {
-    color: #f57c00 !important;
+    color: var(--wz-primary) !important;
 }
 
 @media (min-width: 992px) {

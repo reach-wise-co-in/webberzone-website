@@ -33,5 +33,5 @@
 }
 
 .border-pricing:hover .arrow-icon-demo {
-    background-color: #f57c00; /* Color change on hover */
+    background-color: var(--wz-primary); /* Color change on hover */
 }

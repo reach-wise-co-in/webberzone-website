@@ -15,7 +15,7 @@
 }
 
 ul li::marker {
-    color: #f57c00; 
+    color: var(--wz-primary); 
     font-size: 22px
 }
 
@@ -33,7 +33,7 @@ ul li::marker {
     position: absolute;
     width: 15px; 
     height: 15px; 
-    background-color: #f57c00; 
+    background-color: var(--wz-primary); 
     border-radius: 50%; 
     bottom: 5px;
     right: 2px;
@@ -69,7 +69,7 @@ ul li::marker {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #f57c00;
+    background-color: var(--wz-primary);
     border-radius: 50%;
     width: 35px;
     height: 35px;

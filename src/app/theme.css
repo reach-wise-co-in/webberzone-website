@@ -1,0 +1,9 @@
+/* Brand colors, taken from the WebberZone logo. Change the theme here. */
+:root {
+    --wz-primary: #4690f8;
+    --wz-primary-rgb: 70, 144, 248;
+    --wz-cyan: #72d8f8;
+    --wz-sky: #38b0f8;
+    --wz-indigo: #5470f8;
+    --wz-gradient: linear-gradient(135deg, var(--wz-cyan) 0%, var(--wz-sky) 45%, var(--wz-indigo) 100%);
+}

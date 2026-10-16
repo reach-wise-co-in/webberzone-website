@@ -1,4 +1,5 @@
 // The Vite app imported every page eagerly, so all component CSS was always loaded.
+import "./theme.css";
 // Pages rely on that, so every stylesheet is loaded globally here in the original order.
 import "@/utilities/footer/Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";

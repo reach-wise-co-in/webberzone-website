@@ -3,13 +3,13 @@ import SiteShell from "./SiteShell";
 import { SITE } from "@/lib/site";
 
 const description =
-  "WebberZone is a digital marketing and web agency helping US businesses get more leads with social media management, Meta & Google ads, geo-fencing ads, AI videos, SEO, websites and apps. Plans from $299/month.";
+  "WebberZone is a digital marketing and web agency helping US businesses get more leads with social media management, Meta & Google ads, geo-fencing ads, AI videos, SEO, websites and apps. Plans from $299.";
 
 export const metadata = {
   metadataBase: new URL(SITE.url),
   title: "WebberZone | Social Media Marketing, Meta & Google Ads, SEO & Web Development",
   description,
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/webberzone-mark.png", apple: "/webberzone-mark.png" },
   openGraph: {
     type: "website",
     siteName: SITE.name,
@@ -24,7 +24,7 @@ const organizationSchema = {
   "@type": "ProfessionalService",
   name: SITE.name,
   url: SITE.url,
-  logo: `${SITE.url}/webberzone-logo.svg`,
+  logo: `${SITE.url}/webberzone-mark.png`,
   email: SITE.email,
   telephone: SITE.phoneE164,
   areaServed: "US",

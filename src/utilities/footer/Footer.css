@@ -32,7 +32,7 @@
 }
 
 .bg-web-footer-img {
-    background-image: url(/bg-svg-orange.svg);
+    background-image: url(/bg-svg-blue.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -48,7 +48,7 @@
 }
 
 .btn-footer{
-    background-color: #f57c00 !important;
+    background-color: var(--wz-primary) !important;
     border:  none !important;
     color: #121820 !important;
     padding: 18px 3px !important;
@@ -70,7 +70,7 @@
   }
   
   .footer-link:hover {
-    color: #f57c00 !important; 
+    color: var(--wz-primary) !important; 
   }
   
   .bg-bottom-footer{

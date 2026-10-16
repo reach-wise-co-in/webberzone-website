@@ -36,10 +36,9 @@ function Skills() {
                             >
                                 <ProgressBar
                                     now={90}
-                                    variant="danger"
                                     style={{
                                         height: '5px',
-                                        backgroundColor: '#f57c00',
+                                        backgroundColor: 'var(--wz-primary)',
                                         borderRadius: '5px'
                                     }}
                                 />
@@ -63,10 +62,9 @@ function Skills() {
                             >
                                 <ProgressBar
                                     now={80}
-                                    variant="danger"
                                     style={{
                                         height: '5px',
-                                        backgroundColor: '#f57c00',
+                                        backgroundColor: 'var(--wz-primary)',
                                         borderRadius: '5px'
                                     }}
                                 />
@@ -90,10 +88,9 @@ function Skills() {
                             >
                                 <ProgressBar
                                     now={85}
-                                    variant="danger"
                                     style={{
                                         height: '5px',
-                                        backgroundColor: '#f57c00',
+                                        backgroundColor: 'var(--wz-primary)',
                                         borderRadius: '5px'
                                     }}
                                 />
@@ -116,10 +113,9 @@ function Skills() {
                             >
                                 <ProgressBar
                                     now={85}
-                                    variant="danger"
                                     style={{
                                         height: '5px',
-                                        backgroundColor: '#f57c00',
+                                        backgroundColor: 'var(--wz-primary)',
                                         borderRadius: '5px'
                                     }}
                                 />
@@ -146,10 +142,9 @@ function Skills() {
                             >
                                 <ProgressBar
                                     now={80}
-                                    variant="danger"
                                     style={{
                                         height: '5px',
-                                        backgroundColor: '#f57c00',
+                                        backgroundColor: 'var(--wz-primary)',
                                         borderRadius: '5px'
                                     }}
                                 />
@@ -173,10 +168,9 @@ function Skills() {
                             >
                                 <ProgressBar
                                     now={90}
-                                    variant="danger"
                                     style={{
                                         height: '5px',
-                                        backgroundColor: '#f57c00',
+                                        backgroundColor: 'var(--wz-primary)',
                                         borderRadius: '5px'
                                     }}
                                 />
@@ -200,10 +194,9 @@ function Skills() {
                             >
                                 <ProgressBar
                                     now={90}
-                                    variant="danger"
                                     style={{
                                         height: '5px',
-                                        backgroundColor: '#f57c00',
+                                        backgroundColor: 'var(--wz-primary)',
                                         borderRadius: '5px'
                                     }}
                                 />

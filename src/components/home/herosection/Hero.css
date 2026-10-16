@@ -17,7 +17,7 @@
   }
   
   .text-orange{
-    color: #f57c00;
+    color: var(--wz-primary);
   }
 /* Ensure the container-fluid does not add extra margin or padding */
 .container-fluid {
@@ -150,15 +150,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: inset 0 0 0 0 #f57c00;
-    border: 2px solid #f57c00;
+    box-shadow: inset 0 0 0 0 var(--wz-primary);
+    border: 2px solid var(--wz-primary);
     border-radius: 40px;
     text-decoration: none;
     transition: border 0.3s ease;
 }
 
 .btn-webberzone:hover{
-    border: 3px solid #f57c00;
+    border: 3px solid var(--wz-primary);
 }
 
 .hero-min-head{
@@ -220,7 +220,7 @@
 }
 
 .icon:hover {
-    background-color: #f57c00;
+    background-color: var(--wz-primary);
     animation: puls 0.7s linear infinite 
 }
 
@@ -229,11 +229,11 @@
 }
 
 .left-col-item:hover .icon::before {
-    background: #f57c00; 
+    background: var(--wz-primary); 
 }
 
 .left-col-item:hover .left-col-heading {
-    color: #f57c00; 
+    color: var(--wz-primary); 
 }
 
 .second-item{
@@ -272,7 +272,7 @@
 .small-hr {
     width: 20px; 
     height: 3px; 
-    background-color: #f57c00;
+    background-color: var(--wz-primary);
     border: 2px;
     margin-right: 10px; 
     opacity:20;

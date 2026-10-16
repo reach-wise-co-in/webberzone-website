@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: inset 0 0 0 0 #f57c00;
+    box-shadow: inset 0 0 0 0 var(--wz-primary);
     border: 2px solid rgba(128, 128, 128, 0.425);
     border-radius: 40px;
     text-decoration: none;
@@ -30,12 +30,12 @@
 
 /* Hover effect */
 .border-pricing:hover{
-    border-color: #f57c00; 
+    border-color: var(--wz-primary); 
     box-shadow: 0 0 40px 0 rgba(18,24,32,.1)
 }
 
 .border-pricing:hover .btn-pricing{
-    border-color: #f57c00; 
+    border-color: var(--wz-primary); 
 }
 
 .check-list-item > li{
@@ -49,7 +49,7 @@
 .check-list-item li::before{
     font-weight: 900;
     content: "✓";
-    color: #f57c00;
+    color: var(--wz-primary);
     border-radius: 50%;
     left: 0;
     top: 0;
@@ -75,7 +75,7 @@
 
 .featured-plan {
     position: relative;
-    border-color: #f57c00;
+    border-color: var(--wz-primary);
 }
 
 .plan-badge {
@@ -83,7 +83,7 @@
     top: -14px;
     left: 50%;
     transform: translateX(-50%);
-    background: #f57c00;
+    background: var(--wz-primary);
     color: #fff;
     font-size: 13px;
     padding: 4px 16px;

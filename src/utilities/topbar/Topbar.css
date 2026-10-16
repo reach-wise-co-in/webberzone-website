@@ -17,7 +17,7 @@
 }
 
 .nav-topbar-text:hover{
-    color: #f57c00 !important;
+    color: var(--wz-primary) !important;
 }
 
 .drop-topbar-btn{
